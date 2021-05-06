@@ -9,7 +9,7 @@ import { NollebokenComponent } from './nolleboken/nolleboken.component';
 import { ForestandareComponent } from './forestandare/forestandare.component';
 import { HuvudklassFaddrarComponent } from './huvudklass-faddrar/huvudklass-faddrar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import {MatTabsModule} from '@angular/material/tabs';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +22,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
