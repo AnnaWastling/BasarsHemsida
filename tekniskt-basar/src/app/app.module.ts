@@ -8,6 +8,7 @@ import { KlassSchemaComponent } from './klass-schema/klass-schema.component';
 import { NollebokenComponent } from './nolleboken/nolleboken.component';
 import { ForestandareComponent } from './forestandare/forestandare.component';
 import { HuvudklassFaddrarComponent } from './huvudklass-faddrar/huvudklass-faddrar.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HuvudklassFaddrarComponent } from './huvudklass-faddrar/huvudklass-fadd
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
