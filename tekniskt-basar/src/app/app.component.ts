@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-material-tab-router';  
+  title = 'Tekniskt basår';  
   navLinks: any[];
   activeLinkIndex = -1; 
   constructor(private router: Router) {
