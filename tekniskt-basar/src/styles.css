@@ -1,4 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 
 html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;  background-color: beige; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background: #EAEAEA; }
+
+.mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar{
+    background: #C14953;
+    height: 5px;
+  } 
+  .mat-tab-link {
+  color: black;
+  opacity: 1 !important;
+}
