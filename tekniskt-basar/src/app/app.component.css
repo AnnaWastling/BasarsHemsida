@@ -1,0 +1,8 @@
+.mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar{
+    background: #C14953;
+    height: 5px;
+  } 
+  .mat-tab-link {
+  color: black;
+  opacity: 1 !important;
+}
