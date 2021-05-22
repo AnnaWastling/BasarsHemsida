@@ -1,10 +1,14 @@
-<div class="grid-container">
+<div>
+      <img mat-card-image src="./../../assets/header.jpg">
+        <div>Välkommen till Campus Nollan!</div>
+
   <mat-grid-list  #grid [cols]="cols" rowHeight="20:11" gutterSize="10px">
-    <mat-grid-tile colspan = "3" rowspan ="2">
+    
+    <mat-grid-tile rowspan ="2">
       <mat-card class="dashboard-card">
         <img mat-card-image src="./../../assets/header.jpg">
-        <mat-card-content class="dashboard-card-content">
-          <div>Card Content Here</div>
+        <mat-card-content >
+          <div>Aktivitetsschema</div>
         </mat-card-content>
         <mat-card-footer></mat-card-footer>
       </mat-card>
@@ -14,7 +18,7 @@
       <mat-card class="dashboard-card">
         <img mat-card-image src="./../../assets/header.jpg">
         <mat-card-content class="dashboard-card-content">
-          <div>Card Content Here</div>
+          <div>Klassschema</div>
         </mat-card-content>
         <mat-card-footer></mat-card-footer>
       </mat-card>
@@ -24,35 +28,27 @@
       <mat-card class="dashboard-card">
         <img mat-card-image src="./../../assets/header.jpg">
         <mat-card-content class="dashboard-card-content">
-          <div>Card Content Here</div>
+          <div>Nolleboken</div>
+        </mat-card-content>
+        <mat-card-footer></mat-card-footer>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+
+    <mat-grid-list  #grid [cols]="cols" rowHeight="20:11" gutterSize="10px">
+    <mat-grid-tile  colspan="3" rowspan ="2">
+      <mat-card class="dashboard-card">
+        <mat-card-content class="dashboard-card-content">
+          <div>Klassföreståndare</div>
         </mat-card-content>
         <mat-card-footer></mat-card-footer>
       </mat-card>
     </mat-grid-tile>
 
-    <mat-grid-tile rowspan ="2">
-      <mat-card class="dashboard-card">
-        <img mat-card-image src="./../../assets/header.jpg">
-        <mat-card-content class="dashboard-card-content">
-          <div>Card Content Here</div>
-        </mat-card-content>
-        <mat-card-footer></mat-card-footer>
-      </mat-card>
-    </mat-grid-tile>
-
-    <mat-grid-tile colspan = "3" rowspan ="2">
+    <mat-grid-tile colspan="3" rowspan ="2">
       <mat-card class="dashboard-card">
         <mat-card-content class="dashboard-card-content">
-          <div>Card Content Here</div>
-        </mat-card-content>
-        <mat-card-footer></mat-card-footer>
-      </mat-card>
-    </mat-grid-tile>
-
-    <mat-grid-tile colspan = "3" rowspan ="2">
-      <mat-card class="dashboard-card">
-        <mat-card-content class="dashboard-card-content">
-          <div>Card Content Here</div>
+          <div>Huvudklassfaddrar</div>
         </mat-card-content>
         <mat-card-footer></mat-card-footer>
       </mat-card>
