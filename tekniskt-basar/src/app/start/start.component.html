@@ -1,8 +1,56 @@
 <div class="grid-container">
-  <mat-grid-list cols="6" rowHeight="350px">
-    <mat-grid-tile *ngFor="let card of cards | async" [colspan]="card.cols" [rowspan]="card.rows">
+  <mat-grid-list  #grid [cols]="cols" rowHeight="20:11" gutterSize="10px">
+    <mat-grid-tile colspan = "3" rowspan ="2">
       <mat-card class="dashboard-card">
         <img mat-card-image src="./../../assets/header.jpg">
+        <mat-card-content class="dashboard-card-content">
+          <div>Card Content Here</div>
+        </mat-card-content>
+        <mat-card-footer></mat-card-footer>
+      </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile rowspan ="2">
+      <mat-card class="dashboard-card">
+        <img mat-card-image src="./../../assets/header.jpg">
+        <mat-card-content class="dashboard-card-content">
+          <div>Card Content Here</div>
+        </mat-card-content>
+        <mat-card-footer></mat-card-footer>
+      </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile rowspan ="2">
+      <mat-card class="dashboard-card">
+        <img mat-card-image src="./../../assets/header.jpg">
+        <mat-card-content class="dashboard-card-content">
+          <div>Card Content Here</div>
+        </mat-card-content>
+        <mat-card-footer></mat-card-footer>
+      </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile rowspan ="2">
+      <mat-card class="dashboard-card">
+        <img mat-card-image src="./../../assets/header.jpg">
+        <mat-card-content class="dashboard-card-content">
+          <div>Card Content Here</div>
+        </mat-card-content>
+        <mat-card-footer></mat-card-footer>
+      </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile colspan = "3" rowspan ="2">
+      <mat-card class="dashboard-card">
+        <mat-card-content class="dashboard-card-content">
+          <div>Card Content Here</div>
+        </mat-card-content>
+        <mat-card-footer></mat-card-footer>
+      </mat-card>
+    </mat-grid-tile>
+
+    <mat-grid-tile colspan = "3" rowspan ="2">
+      <mat-card class="dashboard-card">
         <mat-card-content class="dashboard-card-content">
           <div>Card Content Here</div>
         </mat-card-content>

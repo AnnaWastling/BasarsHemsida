@@ -1,6 +1,5 @@
-import { Component } from '@angular/core';
-import { map } from 'rxjs/operators';
-import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
+import { AfterContentInit, Component, ViewChild } from '@angular/core';
+import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-start',
@@ -8,30 +7,44 @@ import { Breakpoints, BreakpointObserver } from '@angular/cdk/layout';
   styleUrls: ['./start.component.css']
 })
 export class StartComponent {
-  /** Based on the screen size, switch from standard to one column per row */
-  cards = this.breakpointObserver.observe(Breakpoints.Handset).pipe(
-    map(({ matches }) => {
-      if (matches) {
-        return [
-          { title: 'header', cols: 6, rows: 1 },
-          { title: 'aktivitetsschema', cols: 6, rows: 1 },
-          { title: 'skolschema', cols: 6, rows: 1 },
-          { title: 'nolleboken', cols: 6, rows: 1 },
-          { title: 'klassföreståndare', cols: 6, rows: 1 },
-          { title: 'huvudklassfaddrar', cols: 6, rows: 1 }
-        ];
+  cols : number | undefined;
+
+  gridByBreakpoint = {
+    xl: 3,
+    lg: 3,
+    md: 3,
+    sm: 2,
+    xs: 1
+  }
+
+  constructor(private breakpointObserver: BreakpointObserver) {
+    this.breakpointObserver.observe([
+      Breakpoints.XSmall,
+      Breakpoints.Small,
+      Breakpoints.Medium,
+      Breakpoints.Large,
+      Breakpoints.XLarge,
+    ]).subscribe(result => {
+      if (result.matches) {
+        if (result.breakpoints[Breakpoints.XSmall]) {
+          this.cols = this.gridByBreakpoint.xs;
+        }
+        if (result.breakpoints[Breakpoints.Small]) {
+          this.cols = this.gridByBreakpoint.sm;
+        }
+        if (result.breakpoints[Breakpoints.Medium]) {
+          this.cols = this.gridByBreakpoint.md;
+        }
+        if (result.breakpoints[Breakpoints.Large]) {
+          this.cols = this.gridByBreakpoint.lg;
+        }
+        if (result.breakpoints[Breakpoints.XLarge]) {
+          this.cols = this.gridByBreakpoint.xl;
+        }
       }
+    });
+  }
 
-      return [
-        { title: 'header', cols: 6, rows: 1},
-        { title: 'aktivitetsschema', cols: 2, rows: 1 },
-        { title: 'skolschema', cols: 2, rows: 1 },
-        { title: 'nolleboken', cols: 2, rows: 1 },
-        { title: 'klassföreståndare', cols: 6, rows: 1 },
-        { title: 'huvudklassfaddrar', cols: 6, rows: 1 }
-      ];
-    })
-  );
-
-  constructor(private breakpointObserver: BreakpointObserver) {}
+  ngOnInit() {
+  }
 }
