@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import {MatAccordion} from '@angular/material/expansion';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -8,6 +9,7 @@ import {MatAccordion} from '@angular/material/expansion';
   styleUrls: ['./aktivitets-schema.component.css']
 })
 export class AktivitetsSchemaComponent implements OnInit {
+  
   @ViewChild('accordion', { static: true })
   Accordion!: MatAccordion;
 

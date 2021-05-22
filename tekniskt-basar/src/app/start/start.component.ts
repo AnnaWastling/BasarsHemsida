@@ -1,5 +1,6 @@
 import { AfterContentInit, Component, ViewChild } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-start',
@@ -7,6 +8,11 @@ import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
   styleUrls: ['./start.component.css']
 })
 export class StartComponent {
+
+  navigate(){
+  //do your any operations
+  this.router.navigate(['aktivitetsschema']);
+  }
   cols : number | undefined;
 
   gridByBreakpoint = {
@@ -17,7 +23,7 @@ export class StartComponent {
     xs: 1
   }
 
-  constructor(private breakpointObserver: BreakpointObserver) {
+  constructor(private breakpointObserver: BreakpointObserver, private router:Router) {
     this.breakpointObserver.observe([
       Breakpoints.XSmall,
       Breakpoints.Small,
