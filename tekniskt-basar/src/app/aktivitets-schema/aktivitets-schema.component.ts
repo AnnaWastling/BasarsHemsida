@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import {MatAccordion} from '@angular/material/expansion';
+
 
 @Component({
   selector: 'app-aktivitets-schema',
@@ -6,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./aktivitets-schema.component.css']
 })
 export class AktivitetsSchemaComponent implements OnInit {
+  @ViewChild('accordion', { static: true })
+  Accordion!: MatAccordion;
 
-  constructor() { }
-
+  closeAllPanels(){
+    this.Accordion.closeAll();
+}
+openAllPanels(){
+    this.Accordion.openAll();
+}
   ngOnInit(): void {
   }
 
