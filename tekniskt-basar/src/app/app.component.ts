@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
 
 })
 export class AppComponent {
+  
   title = 'Tekniskt basår';  
   navLinks: any[];
   activeLinkIndex = -1; 
@@ -42,6 +43,7 @@ export class AppComponent {
         },  
     ];
 }
+
 ngOnInit(): void {
   this.router.events.subscribe((res) => {
       this.activeLinkIndex = this.navLinks.indexOf(this.navLinks.find(tab => tab.link === '.' + this.router.url));

@@ -6,3 +6,10 @@
   color: black;
   opacity: 1 !important;
 }
+
+.mat-tab-header {
+  position: fixed !important;
+  z-index:1000;
+  background-color: white;
+  width: 100%;
+}
