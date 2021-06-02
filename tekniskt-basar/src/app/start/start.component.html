@@ -9,7 +9,7 @@
   <mat-grid-list  #grid [cols]="cols" rowHeight="20:11" gutterSize="10px">
     
     <mat-grid-tile rowspan ="2">
-      <mat-card class="dashboard-card" (click)="navigate()">
+      <mat-card class="dashboard-card" (click)="navigate()" style="background-color:rgb(213, 137, 54);">
         <img mat-card-image src="./../../assets/header.jpg">
         <mat-card-content >
           <div>Aktivitetsschema</div>
@@ -19,7 +19,7 @@
     </mat-grid-tile>
 
     <mat-grid-tile rowspan ="2">
-      <mat-card class="dashboard-card" (click)="navigate()">
+      <mat-card class="dashboard-card" (click)="navigate()" style="background-color:rgb(4, 138, 129);">
         <img mat-card-image src="./../../assets/header.jpg">
         <mat-card-content class="dashboard-card-content">
           <div>Klassschema</div>
@@ -29,7 +29,7 @@
     </mat-grid-tile>
 
     <mat-grid-tile rowspan ="2">
-      <mat-card class="dashboard-card" (click)="navigate()">
+      <mat-card class="dashboard-card" (click)="navigate()" style="background-color:rgb(193, 73, 83);">
         <img mat-card-image src="./../../assets/header.jpg">
         <mat-card-content class="dashboard-card-content">
           <div>Nolleboken</div>
@@ -41,7 +41,7 @@
 
     <mat-grid-list  #grid [cols]="cols" rowHeight="20:11" gutterSize="10px">
     <mat-grid-tile  colspan="3" rowspan ="2">
-      <mat-card class="dashboard-card">
+      <mat-card class="dashboard-card" style="background-color:rgb(106, 142, 174);">
         <mat-card-content class="dashboard-card-content">
           <div>Klassföreståndare</div>
           <mat-grid-list #grid [cols]="cols" rowHeight="2:1">
@@ -62,7 +62,7 @@
 
   <mat-grid-list  #grid [cols]="cols" rowHeight="20:11" gutterSize="10px">
     <mat-grid-tile  colspan="3" rowspan ="2">
-      <mat-card class="dashboard-card">
+      <mat-card class="dashboard-card" style="background-color:rgb(106, 142, 174);">
         <mat-card-content class="dashboard-card-content">
           <div>Huvudklassfaddrar</div>
           <mat-grid-list #grid [cols]="cols" rowHeight="2:1">
