@@ -1,6 +1,17 @@
 .grid-container {
   margin: 20px;
 }
+.container {
+  position: relative;
+}
+.container img {vertical-align: middle;}
+
+.header{
+  padding-top: 50px;
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
 
 .dashboard-card {
   position: absolute;
@@ -10,12 +21,34 @@
   bottom: 15px;
 }
 
-.more-button {
-  position: absolute;
-  top: 5px;
-  right: 10px;
-}
-
 .dashboard-card-content {
   text-align: center;
 }
+.round_image{
+  width: 280px;
+  height: 280px;
+  -webkit-clip-path: circle(50.0% at 50% 50%);
+  clip-path: circle(50.0% at 50% 50%);
+  height: auto;
+}
+
+.container .overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.8); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+

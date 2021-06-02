@@ -1,6 +1,10 @@
 <div>
-      <img mat-card-image src="./../../assets/header.jpg">
-        <div>Välkommen till Campus Nollan!</div>
+  <div class="container">
+  <img  class="header" src="./../../assets/header.jpg">
+    <div class="overlay">Vi är era faddrar! </div>
+  </div>
+  
+      <div><h1>Välkommen till Campus Nollan!</h1></div>
 
   <mat-grid-list  #grid [cols]="cols" rowHeight="20:11" gutterSize="10px">
     
@@ -25,7 +29,7 @@
     </mat-grid-tile>
 
     <mat-grid-tile rowspan ="2">
-      <mat-card class="dashboard-card">
+      <mat-card class="dashboard-card" (click)="navigate()">
         <img mat-card-image src="./../../assets/header.jpg">
         <mat-card-content class="dashboard-card-content">
           <div>Nolleboken</div>
@@ -40,17 +44,33 @@
       <mat-card class="dashboard-card">
         <mat-card-content class="dashboard-card-content">
           <div>Klassföreståndare</div>
+          <mat-grid-list #grid [cols]="cols" rowHeight="2:1">
+            <mat-grid-tile rowspan ="2">
+              <img mat-card-image class="round_image" src="./../../assets/GustavKLF.jpg">
+            </mat-grid-tile>
+            <mat-grid-tile rowspan ="2" >
+              <img mat-card-image class="round_image" src="./../../assets/JohanKLF.jpg">
+            </mat-grid-tile>
+            <mat-grid-tile rowspan ="2" >
+              <img mat-card-image class="round_image" src="./../../assets/ThomasKLF.jpg">
+            </mat-grid-tile>
+          </mat-grid-list>
         </mat-card-content>
-        <mat-card-footer></mat-card-footer>
       </mat-card>
     </mat-grid-tile>
+  </mat-grid-list>
 
-    <mat-grid-tile colspan="3" rowspan ="2">
+  <mat-grid-list  #grid [cols]="cols" rowHeight="20:11" gutterSize="10px">
+    <mat-grid-tile  colspan="3" rowspan ="2">
       <mat-card class="dashboard-card">
         <mat-card-content class="dashboard-card-content">
           <div>Huvudklassfaddrar</div>
+          <mat-grid-list #grid [cols]="cols" rowHeight="2:1">
+            <mat-grid-tile rowspan ="2"><img mat-card-image class="round_image" src="./../../assets/hk1.jpg"></mat-grid-tile>
+            <mat-grid-tile rowspan ="2" ><img mat-card-image class="round_image" src="./../../assets/hk2.jpg"></mat-grid-tile>
+            <mat-grid-tile rowspan ="2" ><img mat-card-image class="round_image" src="./../../assets/hk3.jpg"></mat-grid-tile>
+          </mat-grid-list>
         </mat-card-content>
-        <mat-card-footer></mat-card-footer>
       </mat-card>
     </mat-grid-tile>
   </mat-grid-list>

@@ -8,7 +8,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./start.component.css']
 })
 export class StartComponent {
-
+  isActive = false;
   navigate(){
   //do your any operations
   this.router.navigate(['aktivitetsschema']);
