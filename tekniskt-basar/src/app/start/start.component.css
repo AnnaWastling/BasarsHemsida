@@ -21,7 +21,13 @@
   bottom: 15px;
   border-radius: 55px;
 }
-.clickable{
+.dashboard-card-clickable{
+  cursor:pointer;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
   border-radius: 55px;
 }
 .dashboard-card-content {
