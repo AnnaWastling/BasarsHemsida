@@ -1,16 +1,37 @@
 <div>
   <div class="container">
-  <img  class="header" src="./../../assets/header.jpg">
-    <div class="overlay">Vi är era faddrar! </div>
+    <img class="header" src="./../../assets/header.jpg" />
+    <div class="overlay">Vi är era faddrar!</div>
   </div>
-  
-      <div style="text-align: center; padding-top: 5%;"><h1>Välkommen till Campus Nollan!</h1></div>
 
-  <mat-grid-list  #grid [cols]="cols" gutterSize="10px">
-    
-    <mat-grid-tile rowspan ="1">
-      <mat-card class="dashboard-card" (click)="navigate()" style="background-color:rgb(213, 137, 54);">
-        <img mat-card-image src="./../../assets/header.jpg">
+  <div style="text-align: center;  padding:5%">
+    <h1>Välkommen till Campus Nollan!</h1>
+    <p>
+      På denna sida hittar Nollan information om vad som händer under första
+      veckan på Linköpings Universitet, den så kallade ”Nolle-veckan”.
+      Nolle-veckan består av både undervisning och roliga aktiviteter där alla
+      Basårsnollan får chans att lära känna varandra. Aktiviteterna är såklart
+      frivilliga, men vi hoppas att du vill vara med på så mycket som möjligt,
+      Nollan! Viktigt att veta är att Linköpings Universitet tar kraftigt
+      avstånd från förnedrande och kränkande nollningar som Nollan kanske hört
+      talas om. Syftet med denna vecka är att ge Nollan en rolig start på
+      basåret och en introduktion till livet som universitetsstudent! Vi som
+      kommer att ta hand om dig under denna roliga period är en frisk blandning
+      av studenter från olika tekniska utbildningar här på Campus Norrköping.
+      För att se till så att du får en så bra start på studentlivet som möjligt
+      kommer vi faddrar att vägleda dig genom din första vecka av studier och
+      roliga aktiviteter. Det ska bli kul att ses!
+    </p>
+  </div>
+
+  <mat-grid-list #grid [cols]="cols" gutterSize="10px">
+    <mat-grid-tile rowspan="1">
+      <mat-card
+        class="dashboard-card"
+        (click)="navigate()"
+        style="background-color: rgb(213, 137, 54)"
+      >
+        <img mat-card-image src="./../../assets/header.jpg" />
         <mat-card-content class="dashboard-card-content">
           <div>Aktivitetsschema</div>
         </mat-card-content>
@@ -18,9 +39,13 @@
       </mat-card>
     </mat-grid-tile>
 
-    <mat-grid-tile rowspan ="1">
-      <mat-card class="dashboard-card" (click)="navigate()" style="background-color:rgb(4, 138, 129);">
-        <img mat-card-image src="./../../assets/header.jpg">
+    <mat-grid-tile rowspan="1">
+      <mat-card
+        class="dashboard-card"
+        (click)="navigate()"
+        style="background-color: rgb(4, 138, 129)"
+      >
+        <img mat-card-image src="./../../assets/header.jpg" />
         <mat-card-content class="dashboard-card-content">
           <div>Klassschema</div>
         </mat-card-content>
@@ -28,9 +53,13 @@
       </mat-card>
     </mat-grid-tile>
 
-    <mat-grid-tile rowspan ="1">
-      <mat-card class="dashboard-card" (click)="navigate()" style="background-color:rgb(193, 73, 83);">
-        <img mat-card-image src="./../../assets/header.jpg">
+    <mat-grid-tile rowspan="1">
+      <mat-card
+        class="dashboard-card"
+        (click)="navigate()"
+        style="background-color: rgb(193, 73, 83)"
+      >
+        <img mat-card-image src="./../../assets/header.jpg" />
         <mat-card-content class="dashboard-card-content">
           <div>Nolleboken</div>
         </mat-card-content>
@@ -39,37 +68,97 @@
     </mat-grid-tile>
   </mat-grid-list>
 
-    <mat-grid-list  #grid [cols]="cols" rowHeight="20:11" gutterSize="10px">
-      <mat-card class="dashboard-card" style="background-color:rgb(106, 142, 174)">
-        <mat-card-content class="dashboard-card-content">
-          <div>Klassföreståndare</div>
-            <mat-grid-tile colspan ={{colspan}} rowspan ={{rowspan}}>
-              <img mat-card-image class="round_image" src="./../../assets/GustavKLF.jpg">
-            </mat-grid-tile>
-            <mat-grid-tile colspan ={{colspan}} rowspan ={{rowspan}} >
-              <img mat-card-image class="round_image" src="./../../assets/JohanKLF.jpg">
-            </mat-grid-tile>
-            <mat-grid-tile colspan ={{colspan}} rowspan ={{rowspan}} >
-              <img mat-card-image class="round_image" src="./../../assets/ThomasKLF.jpg">
-            </mat-grid-tile>
-        </mat-card-content>
-      </mat-card>
+  <mat-grid-list #grid [cols]="cols" rowHeight="20:11" gutterSize="10px">
+    <mat-card
+      class="dashboard-card"
+      style="background-color: rgb(106, 142, 174)"
+    >
+      <mat-card-content class="dashboard-card-content">
+        <div><h1>Klassföreståndare</h1></div>
+        <mat-grid-tile colspan="{{ colspan }}" rowspan="{{ rowspan }}">
+          <figure>
+            <img
+              mat-card-image
+              class="round_image"
+              src="./../../assets/GustavKLF.jpg"
+            />
+            <figcaption>
+              KLF klass B Johan Landqvist 0732684813 johla578@student.liu.se
+            </figcaption>
+          </figure>
+        </mat-grid-tile>
+        <mat-grid-tile colspan="{{ colspan }}" rowspan="{{ rowspan }}">
+          <figure>
+            <img
+              mat-card-image
+              class="round_image"
+              src="./../../assets/JohanKLF.jpg"
+            />
+            <figcaption>
+              KLF klass B Johan Landqvist 0732684813 johla578@student.liu.se
+            </figcaption>
+          </figure>
+        </mat-grid-tile>
+        <mat-grid-tile colspan="{{ colspan }}" rowspan="{{ rowspan }}">
+          <figure>
+            <img
+              mat-card-image
+              class="round_image"
+              src="./../../assets/ThomasKLF.jpg"
+            />
+            <figcaption>
+              KLF klass B Johan Landqvist 0732684813 johla578@student.liu.se
+            </figcaption>
+          </figure>
+        </mat-grid-tile>
+      </mat-card-content>
+    </mat-card>
   </mat-grid-list>
 
-  <mat-grid-list  #grid [cols]="cols" rowHeight="20:11" gutterSize="10px">
-      <mat-card class="dashboard-card" style="background-color:rgb(106, 142, 174)">
-        <mat-card-content class="dashboard-card-content">
-          <div>Huvudklassfaddrar</div>
-            <mat-grid-tile colspan ={{colspan}} rowspan ={{rowspan}}>
-              <img mat-card-image class="round_image" src="./../../assets/hk1.jpg">
-            </mat-grid-tile>
-            <mat-grid-tile colspan ={{colspan}} rowspan ={{rowspan}} >
-              <img mat-card-image class="round_image" src="./../../assets/hk2.jpg">
-            </mat-grid-tile>
-            <mat-grid-tile colspan ={{colspan}} rowspan ={{rowspan}} >
-              <img mat-card-image class="round_image" src="./../../assets/hk3.jpg">
-            </mat-grid-tile>
-        </mat-card-content>
-      </mat-card>
+  <mat-grid-list #grid [cols]="cols" rowHeight="20:11" gutterSize="10px">
+    <mat-card
+      class="dashboard-card"
+      style="background-color: rgb(106, 142, 174)"
+    >
+      <mat-card-content class="dashboard-card-content">
+        <div><h1>Huvudklassfaddrar</h1></div>
+        <mat-grid-tile colspan="{{ colspan }}" rowspan="{{ rowspan }}">
+          <figure>
+            <img
+              mat-card-image
+              class="round_image"
+              src="./../../assets/hk1.jpg"
+            />
+            <figcaption>
+              KLF klass B Johan Landqvist 0732684813 johla578@student.liu.se
+            </figcaption>
+          </figure>
+        </mat-grid-tile>
+        <mat-grid-tile colspan="{{ colspan }}" rowspan="{{ rowspan }}">
+          <figure>
+            <img
+              mat-card-image
+              class="round_image"
+              src="./../../assets/hk2.jpg"
+            />
+            <figcaption>
+              KLF klass B Johan Landqvist 0732684813 johla578@student.liu.se
+            </figcaption>
+          </figure>
+        </mat-grid-tile>
+        <mat-grid-tile colspan="{{ colspan }}" rowspan="{{ rowspan }}">
+          <figure>
+            <img
+              mat-card-image
+              class="round_image"
+              src="./../../assets/hk3.jpg"
+            />
+            <figcaption>
+              KLF klass B Johan Landqvist 0732684813 johla578@student.liu.se
+            </figcaption>
+          </figure>
+        </mat-grid-tile>
+      </mat-card-content>
+    </mat-card>
   </mat-grid-list>
 </div>

@@ -35,30 +35,30 @@ export class StartComponent {
       if (result.matches) {
         if (result.breakpoints[Breakpoints.XSmall]) {
           this.cols = this.gridByBreakpoint.xs;
-          this.rowspan = 1;
+          this.rowspan = 1.5;
           this.colspan = 1;
         }
         if (result.breakpoints[Breakpoints.Small]) {
           this.cols = this.gridByBreakpoint.sm;
-          this.rowspan = 1;
-          this.colspan = 3;
+          this.rowspan = 1.5;
+          this.colspan = 1;
 
         }
         if (result.breakpoints[Breakpoints.Medium]) {
           this.cols = this.gridByBreakpoint.md;
-          this.rowspan = 1;
+          this.rowspan = 1.5;
           this.colspan = 1;
 
         }
         if (result.breakpoints[Breakpoints.Large]) {
           this.cols = this.gridByBreakpoint.lg;
-          this.rowspan = 2;
+          this.rowspan = 1.5;
           this.colspan = 1;
 
         }
         if (result.breakpoints[Breakpoints.XLarge]) {
           this.cols = this.gridByBreakpoint.xl;
-          this.rowspan = 2;
+          this.rowspan = 1.5;
           this.colspan = 1;
 
         }

@@ -25,22 +25,10 @@ export class AppComponent {
             link: './aktivitetsschema',
             index: 1
         }, {
-            label: 'klasschema',
-            link: './klasschema',
-            index: 2
-        }, {
             label: 'nolleboken',
             link: './nolleboken',
             index: 3
-        }, {
-          label: 'forestandare',
-          link: './forestandare',
-          index: 4
-        }, {
-          label: 'huvudklassfaddrar',
-          link: './huvudklassfaddrar',
-          index: 5
-        },  
+        }, 
     ];
 }
 

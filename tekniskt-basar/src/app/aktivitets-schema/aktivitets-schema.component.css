@@ -1,11 +1,12 @@
-.top-padding{
-    padding-top: 5%;
+.top-padding {
+  padding-top: 5%;
 }
 
-.måndag{
-    background-color: rgb(213, 137, 54);
+.måndag {
+  background-color: rgb(213, 137, 54);
 }
 
-.buttons{
-    padding:20px;
+.buttons {
+  padding: 20px;
+  border-radius: 25px;
 }
