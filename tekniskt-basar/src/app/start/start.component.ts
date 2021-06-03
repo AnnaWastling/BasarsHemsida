@@ -1,11 +1,29 @@
-import { AfterContentInit, Component, ViewChild } from '@angular/core';
+import {  Component } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Router } from '@angular/router';
+import { trigger, state, style, animate, transition, group } from '@angular/animations';
 
 @Component({
   selector: 'app-start',
   templateUrl: './start.component.html',
-  styleUrls: ['./start.component.css']
+  styleUrls: ['./start.component.css'],
+  animations: [ // DEFAULT STATES
+    trigger('enterLeave', [
+      // :ENTER TRANSITION
+      // Transition Styles
+      transition('void => *', [
+        // 'From' styles
+        style({
+          opacity: 0.2,
+          transform: 'translateY(100vw)'
+        }),
+        animate('1.5s ease-in',
+          style({
+            opacity: 1,
+            transform: 'scale(1)'
+          })
+        )
+      ],)])]
 })
 export class StartComponent {
   isActive = false;
