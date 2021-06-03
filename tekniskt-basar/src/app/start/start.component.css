@@ -21,7 +21,15 @@
   bottom: 15px;
   border-radius: 55px;
 }
-
+.dashboard-card-clickable{
+  cursor:pointer;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border-radius: 55px;
+}
 .dashboard-card-content {
   text-align: center;
 }
@@ -43,6 +51,7 @@
   color: white;
   font-size: 20px;
   padding-bottom: 2%;
+  padding-top: 2%;
   text-align: center;
 }
 

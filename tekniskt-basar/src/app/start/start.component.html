@@ -4,7 +4,7 @@
     <div class="overlay">Vi är era faddrar!</div>
   </div>
 
-  <div style="text-align: center;  padding:5%">
+  <div style="text-align: center; padding:5%">
     <h1>Välkommen till Campus Nollan!</h1>
     <p>
       På denna sida hittar Nollan information om vad som händer under första
@@ -26,14 +26,14 @@
 
   <mat-grid-list #grid [cols]="cols" gutterSize="10px">
     <mat-grid-tile rowspan="1">
-      <mat-card
-        class="dashboard-card"
+      <mat-card class="dashboard-card-clickable"
         (click)="navigate()"
         style="background-color: rgb(213, 137, 54)"
       >
         <img mat-card-image src="./../../assets/header.jpg" />
         <mat-card-content class="dashboard-card-content">
-          <div>Aktivitetsschema</div>
+          <div><h1>Aktivitetsschema</h1>
+          <p>Här är schemat för alla aktiviteter utanför skoltid under nolle-p!</p></div>
         </mat-card-content>
         <mat-card-footer></mat-card-footer>
       </mat-card>
@@ -41,13 +41,14 @@
 
     <mat-grid-tile rowspan="1">
       <mat-card
-        class="dashboard-card"
+        class="dashboard-card-clickable"
         (click)="navigate()"
         style="background-color: rgb(4, 138, 129)"
       >
         <img mat-card-image src="./../../assets/header.jpg" />
         <mat-card-content class="dashboard-card-content">
-          <div>Klassschema</div>
+          <div><h1>Klasschemat</h1>
+            <p>Här kommer ni vidare till schemat för er klass!</p></div>
         </mat-card-content>
         <mat-card-footer></mat-card-footer>
       </mat-card>
@@ -55,13 +56,14 @@
 
     <mat-grid-tile rowspan="1">
       <mat-card
-        class="dashboard-card"
+        class="dashboard-card-clickable"
         (click)="navigate()"
         style="background-color: rgb(193, 73, 83)"
       >
         <img mat-card-image src="./../../assets/header.jpg" />
         <mat-card-content class="dashboard-card-content">
-          <div>Nolleboken</div>
+          <div><h1>Nolleboken</h1>
+            <p>Här är en digital version av nolleboken!</p></div>
         </mat-card-content>
         <mat-card-footer></mat-card-footer>
       </mat-card>

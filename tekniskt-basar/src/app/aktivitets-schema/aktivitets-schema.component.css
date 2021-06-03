@@ -1,5 +1,6 @@
-.top-padding {
+.schema {
   padding-top: 5%;
+  text-align: center;
 }
 
 .måndag {
@@ -7,6 +8,12 @@
 }
 
 .buttons {
-  padding: 20px;
   border-radius: 25px;
+  margin-right:20px;
+}
+
+.buttonContainer{
+  padding: 20px;
+  display: flex;
+  justify-content: center;
 }
