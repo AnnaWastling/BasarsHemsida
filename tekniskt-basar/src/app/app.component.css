@@ -1,5 +1,5 @@
 .mat-tab-group.mat-primary .mat-ink-bar, .mat-tab-nav-bar.mat-primary .mat-ink-bar{
-    background: #C14953;
+    background: rgb(193, 73, 83);
     height: 5px;
   } 
   .mat-tab-link {
@@ -10,7 +10,7 @@
 .mat-tab-header {
   position: fixed !important;
   z-index:1000;
-  background-color: white;
+  background-color:rgb(219, 211, 202);
   width: 100%;
 }
 

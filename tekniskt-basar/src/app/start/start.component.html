@@ -4,21 +4,21 @@
     <div class="overlay">Vi är era faddrar! </div>
   </div>
   
-      <div><h1>Välkommen till Campus Nollan!</h1></div>
+      <div style="text-align: center; padding-top: 5%;"><h1>Välkommen till Campus Nollan!</h1></div>
 
-  <mat-grid-list  #grid [cols]="cols" rowHeight="20:11" gutterSize="10px">
+  <mat-grid-list  #grid [cols]="cols" gutterSize="10px">
     
-    <mat-grid-tile rowspan ="2">
+    <mat-grid-tile rowspan ="1">
       <mat-card class="dashboard-card" (click)="navigate()" style="background-color:rgb(213, 137, 54);">
         <img mat-card-image src="./../../assets/header.jpg">
-        <mat-card-content >
+        <mat-card-content class="dashboard-card-content">
           <div>Aktivitetsschema</div>
         </mat-card-content>
         <mat-card-footer></mat-card-footer>
       </mat-card>
     </mat-grid-tile>
 
-    <mat-grid-tile rowspan ="2">
+    <mat-grid-tile rowspan ="1">
       <mat-card class="dashboard-card" (click)="navigate()" style="background-color:rgb(4, 138, 129);">
         <img mat-card-image src="./../../assets/header.jpg">
         <mat-card-content class="dashboard-card-content">
@@ -28,7 +28,7 @@
       </mat-card>
     </mat-grid-tile>
 
-    <mat-grid-tile rowspan ="2">
+    <mat-grid-tile rowspan ="1">
       <mat-card class="dashboard-card" (click)="navigate()" style="background-color:rgb(193, 73, 83);">
         <img mat-card-image src="./../../assets/header.jpg">
         <mat-card-content class="dashboard-card-content">
@@ -40,38 +40,36 @@
   </mat-grid-list>
 
     <mat-grid-list  #grid [cols]="cols" rowHeight="20:11" gutterSize="10px">
-    <mat-grid-tile  colspan="3" rowspan ="2">
-      <mat-card class="dashboard-card" style="background-color:rgb(106, 142, 174);">
+      <mat-card class="dashboard-card" style="background-color:rgb(106, 142, 174)">
         <mat-card-content class="dashboard-card-content">
           <div>Klassföreståndare</div>
-          <mat-grid-list #grid [cols]="cols" rowHeight="2:1">
-            <mat-grid-tile rowspan ="2">
+            <mat-grid-tile colspan ={{colspan}} rowspan ={{rowspan}}>
               <img mat-card-image class="round_image" src="./../../assets/GustavKLF.jpg">
             </mat-grid-tile>
-            <mat-grid-tile rowspan ="2" >
+            <mat-grid-tile colspan ={{colspan}} rowspan ={{rowspan}} >
               <img mat-card-image class="round_image" src="./../../assets/JohanKLF.jpg">
             </mat-grid-tile>
-            <mat-grid-tile rowspan ="2" >
+            <mat-grid-tile colspan ={{colspan}} rowspan ={{rowspan}} >
               <img mat-card-image class="round_image" src="./../../assets/ThomasKLF.jpg">
             </mat-grid-tile>
-          </mat-grid-list>
         </mat-card-content>
       </mat-card>
-    </mat-grid-tile>
   </mat-grid-list>
 
   <mat-grid-list  #grid [cols]="cols" rowHeight="20:11" gutterSize="10px">
-    <mat-grid-tile  colspan="3" rowspan ="2">
-      <mat-card class="dashboard-card" style="background-color:rgb(106, 142, 174);">
+      <mat-card class="dashboard-card" style="background-color:rgb(106, 142, 174)">
         <mat-card-content class="dashboard-card-content">
           <div>Huvudklassfaddrar</div>
-          <mat-grid-list #grid [cols]="cols" rowHeight="2:1">
-            <mat-grid-tile rowspan ="2"><img mat-card-image class="round_image" src="./../../assets/hk1.jpg"></mat-grid-tile>
-            <mat-grid-tile rowspan ="2" ><img mat-card-image class="round_image" src="./../../assets/hk2.jpg"></mat-grid-tile>
-            <mat-grid-tile rowspan ="2" ><img mat-card-image class="round_image" src="./../../assets/hk3.jpg"></mat-grid-tile>
-          </mat-grid-list>
+            <mat-grid-tile colspan ={{colspan}} rowspan ={{rowspan}}>
+              <img mat-card-image class="round_image" src="./../../assets/hk1.jpg">
+            </mat-grid-tile>
+            <mat-grid-tile colspan ={{colspan}} rowspan ={{rowspan}} >
+              <img mat-card-image class="round_image" src="./../../assets/hk2.jpg">
+            </mat-grid-tile>
+            <mat-grid-tile colspan ={{colspan}} rowspan ={{rowspan}} >
+              <img mat-card-image class="round_image" src="./../../assets/hk3.jpg">
+            </mat-grid-tile>
         </mat-card-content>
       </mat-card>
-    </mat-grid-tile>
   </mat-grid-list>
 </div>

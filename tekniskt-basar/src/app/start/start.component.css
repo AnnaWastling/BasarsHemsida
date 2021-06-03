@@ -3,12 +3,12 @@
 }
 .container {
   position: relative;
+  width:100%;
 }
-.container img {vertical-align: middle;}
 
 .header{
   padding-top: 50px;
-  width: 100%;
+  width: inherit;
   height: auto;
   vertical-align: middle;
 }
@@ -19,14 +19,15 @@
   left: 15px;
   right: 15px;
   bottom: 15px;
+  border-radius: 55px;
 }
 
 .dashboard-card-content {
   text-align: center;
 }
 .round_image{
-  width: 280px;
-  height: 280px;
+  width: 100%;
+  max-width: 150px;
   -webkit-clip-path: circle(50.0% at 50% 50%);
   clip-path: circle(50.0% at 50% 50%);
   height: auto;
@@ -35,20 +36,17 @@
 .container .overlay {
   position: absolute; 
   bottom: 0; 
-  background: rgb(193, 73, 83);
-  background: rgba(193, 73, 83, 0.8); /* Black see-through */
-  color: #f1f1f1; 
-  width: 100%;
+  width: inherit;
+  background: rgba(193, 73, 83, 0.8); 
   transition: .5s ease;
   opacity:0;
   color: white;
   font-size: 20px;
-  padding: 20px;
+  padding: 2%;
   text-align: center;
 }
 
 .container:hover .overlay {
   opacity: 1;
 }
-
 
