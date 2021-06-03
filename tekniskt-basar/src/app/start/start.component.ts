@@ -2,7 +2,6 @@ import {  Component } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Router } from '@angular/router';
 import { trigger, state, style, animate, transition, group } from '@angular/animations';
-import AOS from 'aos';
 
 @Component({
   selector: 'app-start',
@@ -86,6 +85,5 @@ export class StartComponent {
   }
 
   ngOnInit() {
-    AOS.init();
   }
 }
