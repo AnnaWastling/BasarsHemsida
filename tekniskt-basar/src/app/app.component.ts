@@ -1,6 +1,6 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import { Router } from '@angular/router';
-import AOS from 'aos';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-root',
@@ -43,7 +43,7 @@ export class AppComponent {
         this.navLinks.find((tab) => tab.link === '.' + this.router.url)
       );
     });
-        AOS.init();
+        AOS.init({duration: 1200});
 
   }
 }
