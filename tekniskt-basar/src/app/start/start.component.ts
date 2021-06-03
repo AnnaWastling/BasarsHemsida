@@ -1,6 +1,7 @@
-import { AfterContentInit, Component, ViewChild } from '@angular/core';
+import {  Component } from '@angular/core';
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-start',
