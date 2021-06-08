@@ -14,6 +14,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { LayoutModule } from '@angular/cdk/layout';
 import {MatExpansionModule} from '@angular/material/expansion';
+import { MaterialElevationDirective } from './elevation.directive';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import {MatExpansionModule} from '@angular/material/expansion';
     AppComponent,
     AktivitetsSchemaComponent,
     NollebokenComponent,
-    StartComponent
+    StartComponent,
+    MaterialElevationDirective
   ],
   imports: [
     BrowserModule,
@@ -34,7 +36,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
     MatIconModule,
     MatButtonModule,
     LayoutModule,
-    MatExpansionModule
+    MatExpansionModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

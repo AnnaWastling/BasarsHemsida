@@ -8,12 +8,12 @@ import { Router } from '@angular/router';
   templateUrl: './start.component.html',
   styleUrls: ['./start.component.css']
 })
+
 export class StartComponent {
-  isActive = false;
   navigate(){
-  //do your any operations
   this.router.navigate(['aktivitetsschema']);
   }
+  
   cols : number | undefined;
   rowspan = 1;
   colspan = 1;
