@@ -5,6 +5,7 @@ import { NollebokenComponent } from './nolleboken/nolleboken.component';
 import { StartComponent } from './start/start.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: '/start', pathMatch: 'full' },
   { path: 'aktivitetsschema', component: AktivitetsSchemaComponent },
   { path: 'nolleboken', component: NollebokenComponent },
   { path: 'start', component: StartComponent }
