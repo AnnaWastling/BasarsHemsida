@@ -15,6 +15,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { LayoutModule } from '@angular/cdk/layout';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { MaterialElevationDirective } from './elevation.directive';
+import { KlasschemaComponent } from './klasschema/klasschema.component';
 
 
 @NgModule({
@@ -23,7 +24,9 @@ import { MaterialElevationDirective } from './elevation.directive';
     AktivitetsSchemaComponent,
     NollebokenComponent,
     StartComponent,
-    MaterialElevationDirective
+    MaterialElevationDirective,
+    KlasschemaComponent,
+    
   ],
   imports: [
     BrowserModule,

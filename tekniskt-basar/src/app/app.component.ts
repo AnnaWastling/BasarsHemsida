@@ -26,7 +26,7 @@ export class AppComponent {
       },
       {
         label: 'Klasschema',
-        link: 'https://cloud.timeedit.net/liu/web/schema/riqmZQY76ZXZ37Qy5Y7Q49y06cZ056Q6p0Z0753Q9Yo8ZgQ0Qum9clQoZq6Qo.html',
+        link: './klasschema',
         index: 2,
       },
       {

@@ -18,8 +18,8 @@ export class StartComponent {
     }
 
     navigateschema(){
-     location.href="https://cloud.timeedit.net/liu/web/schema/ri167XQQ095Z50Qm47080gZ6y5Y7309Q6Y93Y7.html"
-      }
+      this.router.navigate(['klasschema']);
+    }
   
   cols : number | undefined;
   rowspan = 1;
