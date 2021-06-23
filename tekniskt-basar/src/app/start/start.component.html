@@ -1,11 +1,14 @@
 <div>
   <div class="container" data-aos="fade-zoom-in">
-    <img class="header" src="./../../assets/header.jpg" />
-    <div class="overlay"> <h1>Vi är er mottagningskomitté!</h1><p>
-      Vi är tio studenter från tekniska högskolan här på Campus Norrköping, och ett glatt gäng faddrar.
-      Med mottagningskommitténs planering och hjälp från faddrarna vill vi se till
-      att du får en så bra start på studentlivet som möjligt och tillsammans kommer
-      vi att vägleda dig genom din första vecka av studier och roliga aktiviteter.</p></div>
+    <img class="header" src="./../../assets/headermindre.jpg" />
+    <div class="overlay">
+      <h1>Vi är er mottagningskomitté!</h1>
+      <p class="overlay-text">
+        Vi är tio studenter från tekniska högskolan här på Campus Norrköping som tillsammans med ett
+        glatt gäng faddrar vill se till
+        att du får en så bra start på studentlivet som möjligt. Tillsammans kommer
+        vi att vägleda dig genom din första vecka av studier och roliga aktiviteter.</p>
+    </div>
   </div>
 
   <div style="text-align: center; padding:5%" data-aos="fade-up">
@@ -30,47 +33,42 @@
 
   <mat-grid-list #grid [cols]="cols" gutterSize="10px">
     <mat-grid-tile rowspan="1">
-      <mat-card class="dashboard-card-clickable" appMaterialElevation
-        (click)="navigate()"
-        style="background-color: rgb(213, 137, 54)"
-        data-aos="zoom-in"
-      >
-        <img mat-card-image src="./../../assets/aktivitet.svg" class="img"/>
+      <mat-card class="dashboard-card-clickable" appMaterialElevation (click)="navigate()"
+        style="background-color: rgb(213, 137, 54)" data-aos="zoom-in">
+        <img mat-card-image src="./../../assets/aktivitet.svg" class="img" />
         <mat-card-content class="dashboard-card-content">
-          <div><h1>Aktivitetsschema</h1>
-          <p>Här är schemat för alla aktiviteter utanför skoltid under nolle-p!</p></div>
+          <div>
+            <h1>Aktivitetsschema</h1>
+            <p>Här är schemat för alla aktiviteter utanför skoltid under nolle-p!</p>
+          </div>
         </mat-card-content>
         <mat-card-footer></mat-card-footer>
       </mat-card>
     </mat-grid-tile>
 
     <mat-grid-tile rowspan="1">
-      <mat-card
-        class="dashboard-card-clickable" appMaterialElevation
-        (click)="navigateschema()"
-        style="background-color: rgb(4, 138, 129)"
-        data-aos="zoom-in"
-      >
-        <img mat-card-image src="./../../assets/skola.svg" class="img"/>
-        <mat-card-content class="dashboard-card-content" >
-          <div><h1>Klasschemat</h1>
-            <p>Här kommer ni vidare till schemat för er klass!</p></div>
+      <mat-card class="dashboard-card-clickable" appMaterialElevation (click)="navigateschema()"
+        style="background-color: rgb(4, 138, 129)" data-aos="zoom-in">
+        <img mat-card-image src="./../../assets/skola.svg" class="img" />
+        <mat-card-content class="dashboard-card-content">
+          <div>
+            <h1>Klasschemat</h1>
+            <p>Här kommer ni vidare till schemat för er klass!</p>
+          </div>
         </mat-card-content>
         <mat-card-footer></mat-card-footer>
       </mat-card>
     </mat-grid-tile>
 
     <mat-grid-tile rowspan="1">
-      <mat-card
-        class="dashboard-card-clickable" appMaterialElevation
-        (click)="navigatenolleboken()"
-        style="background-color: rgb(193, 73, 83)"
-        data-aos="zoom-in"
-      >
-        <img mat-card-image src="./../../assets/nolleboken.svg" class="img"/>
-        <mat-card-content class="dashboard-card-content" >
-          <div style="padding-top: 20px;"><h1>Nolleboken</h1>
-            <p>Här är en digital version av nolleboken!</p></div>
+      <mat-card class="dashboard-card-clickable" appMaterialElevation (click)="navigatenolleboken()"
+        style="background-color: rgb(193, 73, 83)" data-aos="zoom-in">
+        <img mat-card-image src="./../../assets/nolleboken.svg" class="img" />
+        <mat-card-content class="dashboard-card-content">
+          <div style="padding-top: 20px;">
+            <h1>Nolleboken</h1>
+            <p>Här är en digital version av nolleboken!</p>
+          </div>
         </mat-card-content>
         <mat-card-footer></mat-card-footer>
       </mat-card>
@@ -78,59 +76,46 @@
   </mat-grid-list>
 
   <mat-grid-list #grid [cols]="cols" rowHeight="20:11" gutterSize="10px">
-    <mat-card
-      class="dashboard-card"
-      style="background-color: rgb(106, 142, 174)"
-      data-aos="fade-up"
-    >
+    <mat-card class="dashboard-card" style="background-color: rgb(106, 142, 174)" data-aos="fade-up">
       <mat-card-content class="dashboard-card-content">
-        <div><h1>Klassföreståndare</h1></div>
+        <div>
+          <h1>Klassföreståndare</h1>
+        </div>
         <mat-grid-tile colspan="{{ colspan }}" rowspan="{{ rowspan }}">
           <figure>
-            <img
-              mat-card-image
-              class="round_image"
-              src="./../../assets/GustavKLF.jpg"
-            />
+            <img mat-card-image class="round_image" src="./../../assets/GustavKLF.jpg" />
             <figcaption>
               <ul style="list-style-type:none;">
-              <li>Namn: Gustav Hörman</li>
-              <li>Telefonnr: 072-240 72 48 </li>
-               <li> Mejl: gusho642@student.liu.se</li>
-             </ul>
+                <li>Namn: Gustav Hörman</li>
+                <li>Telefonnr: 072-240 72 48 </li>
+                <li> Mejl: gusho642@student.liu.se</li>
+              </ul>
 
             </figcaption>
           </figure>
         </mat-grid-tile>
         <mat-grid-tile colspan="{{ colspan }}" rowspan="{{ rowspan }}">
           <figure>
-            <img
-              mat-card-image
-              class="round_image"
-              src="./../../assets/JohanKLF.jpg"
-            />
+            <img mat-card-image class="round_image" src="./../../assets/JohanKLF.jpg" />
             <figcaption>
               <ul style="list-style-type:none;">
                 <li>Namn: Johan Landqvist</li>
                 <li>Telefonnr: 073-268 48 13 </li>
-                 <li> Mejl: johla578@student.liu.se</li>
-               </ul>
+                <li> Mejl: johla578@student.liu.se</li>
+              </ul>
             </figcaption>
           </figure>
         </mat-grid-tile>
         <mat-grid-tile colspan="{{ colspan }}" rowspan="{{ rowspan }}">
           <figure>
-            <img
-              mat-card-image
-              class="round_image"
-              src="./../../assets/ThomasKLF.jpg"
-            />
+            <img mat-card-image class="round_image" src="./../../assets/ThomasKLF.jpg" />
             <figcaption>
               <ul style="list-style-type:none;">
                 <li>Namn: Thomas Bui</li>
                 <li>Telefonnr: 070-428 97 55 </li>
-                 <li> Mejl: thobu687@student.liu.se</li>
-               </ul>            </figcaption>
+                <li> Mejl: thobu687@student.liu.se</li>
+              </ul>
+            </figcaption>
           </figure>
         </mat-grid-tile>
       </mat-card-content>
@@ -138,59 +123,51 @@
   </mat-grid-list>
 
   <mat-grid-list #grid [cols]="cols" rowHeight="20:11" gutterSize="10px">
-    <mat-card
-      class="dashboard-card"
-      style="background-color: rgb(106, 142, 174)"
-      data-aos="fade-up"
-    >
+    <mat-card class="dashboard-card" style="background-color: rgb(106, 142, 174)" data-aos="fade-up">
       <mat-card-content class="dashboard-card-content">
-        <div><h1>Huvudklassfaddrar</h1></div>
+        <div>
+          <h1>Huvudklassfaddrar</h1>
+        </div>
         <mat-grid-tile colspan="{{ colspan }}" rowspan="{{ rowspan }}">
           <figure>
-            <img
-              mat-card-image
-              class="round_image"
-              src="./../../assets/hk1.jpg"
-            />
+            <img mat-card-image class="round_image" src="./../../assets/hk1.jpg" />
             <figcaption>
               <ul style="list-style-type:none;">
                 <li>Namn: Anna Wästling</li>
                 <li>Telefonnr: 073-267 90 71 </li>
-                 <li> Mejl: annwa917@student.liu.se</li>
-               </ul>            </figcaption>
+                <li> Mejl: annwa917@student.liu.se</li>
+              </ul>
+            </figcaption>
           </figure>
         </mat-grid-tile>
         <mat-grid-tile colspan="{{ colspan }}" rowspan="{{ rowspan }}">
           <figure>
-            <img
-              mat-card-image
-              class="round_image"
-              src="./../../assets/hk2.jpg"
-            />
+            <img mat-card-image class="round_image" src="./../../assets/hk2.jpg" />
             <figcaption>
               <ul style="list-style-type:none;">
                 <li>Namn: Amanda Hult</li>
                 <li>Telefonnr: 072-749 18 00 </li>
-                 <li> Mejl: amahu396@student.liu.se</li>
-               </ul>            </figcaption>
+                <li> Mejl: amahu396@student.liu.se</li>
+              </ul>
+            </figcaption>
           </figure>
         </mat-grid-tile>
         <mat-grid-tile colspan="{{ colspan }}" rowspan="{{ rowspan }}">
           <figure>
-            <img
-              mat-card-image
-              class="round_image"
-              src="./../../assets/hk3.jpg"
-            />
+            <img mat-card-image class="round_image" src="./../../assets/hk3.jpg" />
             <figcaption>
               <ul style="list-style-type:none;">
                 <li>Namn: Simon Joelsson</li>
                 <li>Telefonnr: 070-340 13 63 </li>
-                 <li> Mejl: simjo567@student.liu.se</li>
-               </ul>            </figcaption>
+                <li> Mejl: simjo567@student.liu.se</li>
+              </ul>
+            </figcaption>
           </figure>
         </mat-grid-tile>
       </mat-card-content>
     </mat-card>
   </mat-grid-list>
+  <a href="https://datatjej.se/"><img src="assets/DatatjejAnnons.jpg" style="width: 25%; display: block;
+    margin-left: auto;
+    margin-right: auto;" data-aos="fade-up"></a>
 </div>
