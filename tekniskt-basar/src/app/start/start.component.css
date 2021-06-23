@@ -59,3 +59,10 @@
   opacity: 1;
 }
 
+.img{
+  width: 80%;
+  height: auto;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
