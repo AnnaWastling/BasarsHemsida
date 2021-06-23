@@ -1,4 +1,10 @@
-<div class="schema"><h1>SCHEMA</h1></div>
+<div class="schema"><h1>SCHEMA</h1>
+<p>Här hittar ni schemat för nolle-p! På grund av rådande läge kan schemat komma att ändras.
+   Så håll utkik på denna sida samt lyssna på uppdateringar från huvudklassfaddrarna. </p>
+   <p><img src="assets/tree.svg" style="width:5%;"> = Utomhusaktivitet, ha kläder efter väder</p>
+   <p><img src="assets/beer.svg" style="width:5%;"> = Alkoholfri aktivitet.
+    <cite>Även samtliga aktiviteter under dagtid är alkoholfria.</cite></p>
+  </div>
 <div class="buttonContainer">
   <button mat-flat-button class="buttons" (click)="openAllPanels()">
     <p>Se hela schemat</p>
@@ -11,7 +17,7 @@
 
 <mat-accordion [multi]="true" #accordion="matAccordion">
   <mat-expansion-panel class="måndag" #mapanel="matExpansionPanel">
-    <mat-expansion-panel-header>
+    <mat-expansion-panel-header class="expandable">
       <h2>Fredag 27/8</h2>
     </mat-expansion-panel-header>
     <b>10.00 Upprop</b><p>
@@ -23,80 +29,111 @@
       <b>12.15 - 13.00 Lunch</b>
       <p>Första dagen bjuds det på gratis lunch, mums!</p>
       <b>13.15 - 15.00 Klassföreståndare-pass</b>
-      <p></p>
-      <b>? Campusrundvandring</b>
-      <p></p>
-      <b>18.00 - 20.00 Lekar i Folkparken</b>
+      <p> Klassföreståndarna håller ett pass där ni kan bekanta er med dem samt få svar på alla funderingen som finns, bra va?</p>
+      <b>?? Campusrundvandring</b>
+      <p> Vi tar en sväng på campus och bekantar oss lite med området. Ställ frågor om du har några!</p>
+      <b>18.00 - 20.00 Lekar i Folkparken <img src="assets/tree.svg" style="width:5%;"></b>
       <p>Samling mellan husen för att sedan gå och leka roliga lekar tillsammans i Folkparken</p>
   </mat-expansion-panel>
 
-  <mat-expansion-panel class="måndag" #mapanel="matExpansionPanel">
-    <mat-expansion-panel-header>
+  <mat-expansion-panel class="helg2" #mapanel="matExpansionPanel">
+    <mat-expansion-panel-header class="helg">
       <h2>Lördag 28/8</h2>
     </mat-expansion-panel-header>
-    <b> 13.00 - 15.00 Stadsvandring</b>
+    <b> 13.00 - 15.00 Stadsvandring <img src="assets/tree.svg" style="width:5%;"></b>
     <p>Lär känna Norrköping genom en roligare variant på stadsvandring! Samling mellan husen. </p>
   </mat-expansion-panel>
 
-  <mat-expansion-panel class="måndag" #mapanel="matExpansionPanel">
-    <mat-expansion-panel-header>
+  <mat-expansion-panel class="helg2" #mapanel="matExpansionPanel">
+    <mat-expansion-panel-header class="helg">
       <h2>Söndag 29/8</h2>
     </mat-expansion-panel-header>
-    <b>15.00 - 16.00 Pizza-picknick</b>
+    <b>15.00 - 16.00 Pizza-picknick <img src="assets/tree.svg" style="width:5%;"></b>
     <p>Vi käkar lite god pizza ihop, självklart bjuder faddrarna! Samling mellan husen.</p>
-    <b>16.00 - 18.30 Filmkväll med Stubinen</b>
+    <b>16.00 - 18.30 Filmkväll med Stubinen <img src="assets/beer.svg" style="width:5%;"></b>
     <p>Söndagsmyset avslutas med en filmkväll med studenternas filmförening Stubinen. </p>
   </mat-expansion-panel>
 
   <mat-expansion-panel class="måndag" #mapanel="matExpansionPanel">
-    <mat-expansion-panel-header>
-      <h2>Måndag 31/8</h2>
+    <mat-expansion-panel-header class="expandable">
+      <h2>Måndag 30/8</h2>
     </mat-expansion-panel-header>
-    <b>12.15 Matlådans dag</b>
+    <b>12.15 Matlådans dag <img src="assets/tree.svg" style="width:5%;"></b>
     <p>Samling mellan husen med en
       matlåda redo för gemensam lunch.</p>
-      <b>17.30 Picknick och brännboll</b>
+      <b>17.30 Picknick och brännboll <img src="assets/tree.svg" style="width:5%;"></b>
       <p>Vi samlas mellan husen för att tillsammans gå och spela lite brännboll. </p>
   </mat-expansion-panel>
 
   <mat-expansion-panel class="måndag" #mapanel="matExpansionPanel">
-    <mat-expansion-panel-header>
-      <h2>Tisdag 1/9</h2>
+    <mat-expansion-panel-header class="expandable">
+      <h2>Tisdag 31/8</h2>
     </mat-expansion-panel-header>
-    <p>Description</p>
+    <b>10.00 Morgongympa</b>
+    <p>Det är alltid viktigt med
+      uppvärmning, Nollan! Vi ses mellan
+      husen.</p>
+    <b>18.00 - 22.00 Pub & Spelkväll med sektionerna <img src="assets/beer.svg" style="width:5%;"></b>
+    <p>Vi passar på att träffa sektionerna på en pub & spelkväll där 
+      vi får höra om de olika programmen!</p>
+    <b>18.00 - 22.00 Grillkväll på DK:s innergård <img src="assets/tree.svg" style="width:5%;"></b>
+    <p>Ta med era
+      favoritgodsaker att lägga på grillen för ikväll är det grillning på schemat!
+      Vi samlas som vanligt mellan husen.</p>
   </mat-expansion-panel>
 
   <mat-expansion-panel class="måndag" #mapanel="matExpansionPanel">
-    <mat-expansion-panel-header>
-      <h2>Onsdag 2/9</h2>
+    <mat-expansion-panel-header class="expandable">
+      <h2>Onsdag 1/9</h2>
     </mat-expansion-panel-header>
-    <p>Description</p>
+    <b>17.00 - 20.00 Pluggkväll <img src="assets/beer.svg" style="width:5%;"></b>
+    <p>På onsdagen tar vi ifatt med plugget. Vi faddrar finns med för
+      att hjälpa till. Kanske bjuds det också
+      på något gott! </p>
   </mat-expansion-panel>
 
   <mat-expansion-panel class="måndag" #mapanel="matExpansionPanel">
-    <mat-expansion-panel-header>
-      <h2>Torsdag 3/9</h2>
+    <mat-expansion-panel-header class="expandable">
+      <h2>Torsdag 2/9</h2>
     </mat-expansion-panel-header>
-    <p>Description</p>
-  </mat-expansion-panel>
+    <b>18.00 - 22.00 Pub & Spelkväll med sektionerna <img src="assets/beer.svg" style="width:5%;"></b>
+    <p>Vi passar på att träffa sektionerna på en pub & spelkväll där 
+      vi får höra om de olika programmen!</p>
+    <b>18.00 - 22.00 Grillkväll på DK:s innergård <img src="assets/tree.svg" style="width:5%;"></b>
+    <p> Ta med era
+      favoritgodsaker att lägga på grillen för ikväll är det grillning på schemat!
+      Vi samlas som vanligt mellan husen.</p> 
+</mat-expansion-panel>
 
   <mat-expansion-panel class="måndag" #mapanel="matExpansionPanel">
-    <mat-expansion-panel-header>
-      <h2>Fredag 4/9</h2>
+    <mat-expansion-panel-header class="expandable">
+      <h2>Fredag 3/9</h2>
     </mat-expansion-panel-header>
-    <p>Description</p>
+    <b>10.00 Morgongympa</b>
+    <p>Vi kör igen! Det är alltid viktigt att hålla sig i 
+      form! Vi ses mellan husen.</p>
+    <b>18.00 Quizkväll <img src="assets/beer.svg" style="width:5%;"></b>
+    <p>Ikväll ses vi och gör ett quiz som inte handlar om matte, spännande!</p>
   </mat-expansion-panel>
 
-  <mat-expansion-panel class="måndag" #mapanel="matExpansionPanel">
-    <mat-expansion-panel-header>
-      <h2>Lördag 5/9</h2>
+  <mat-expansion-panel class="helg2" #mapanel="matExpansionPanel">
+    <mat-expansion-panel-header class="helg">
+      <h2>Lördag 4/9</h2>
     </mat-expansion-panel-header>
-    <p>Description</p>
+    <b>18.30 - 22.30 Finsittning</b>
+    <p>I våra allra finaste kläder är det dags
+      för finsittning på Trappan. Kort och
+      gott: mat, underhållning och trevligt
+      sällskap!</p>
   </mat-expansion-panel>
-  <mat-expansion-panel class="måndag" #mapanel="matExpansionPanel">
-    <mat-expansion-panel-header>
-      <h2>Söndag 6/9</h2>
+  <mat-expansion-panel class="helg2" #mapanel="matExpansionPanel">
+    <mat-expansion-panel-header class="helg">
+      <h2>Söndag 5/9</h2>
     </mat-expansion-panel-header>
-    <p>Description</p>
+    <b>14.00 Ettans dag</b>
+    <p>Nollan har blivit Ettan! Det ska
+      såklart firas med fika och trevligt
+      häng.</p>
   </mat-expansion-panel>
 </mat-accordion>
+

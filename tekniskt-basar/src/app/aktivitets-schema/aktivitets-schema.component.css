@@ -4,7 +4,13 @@
 }
 
 .måndag {
-  background-color: rgb(213, 137, 54);
+  background-color:rgb(211, 145, 75);
+}
+.helg{
+  background-color:rgb(193, 73, 83);
+}
+.helg2{
+  background-color:rgb(194, 91, 99);
 }
 
 .buttons {
@@ -17,3 +23,8 @@
   display: flex;
   justify-content: center;
 }
+
+.expandable{
+  background-color:rgb(213, 137, 54);
+}
+
