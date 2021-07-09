@@ -25,7 +25,7 @@ export class AppComponent {
         index: 1,
       },
       {
-        label: 'Klasschema',
+        label: 'Schema Basåret',
         link: './klasschema',
         index: 2,
       },
