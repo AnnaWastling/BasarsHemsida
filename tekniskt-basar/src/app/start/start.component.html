@@ -15,8 +15,8 @@
     <h1>Välkommen till Campus, Nollan!</h1>
     <p>
       På denna sida hittar Nollan information om vad som händer under första
-      veckan på Linköpings Universitet, den så kallade ”Nolle-veckan”.
-      Nolle-veckan består av både undervisning och roliga aktiviteter där alla
+      veckan på Linköpings Universitet, den så kallade ”Nolle-perioden.
+      Nolle-perioden består av både undervisning och roliga aktiviteter där alla
       Basårsnollan får chans att lära känna varandra. Aktiviteterna är såklart
       frivilliga, men vi hoppas att du vill vara med på så mycket som möjligt,
       Nollan! Viktigt att veta är att Linköpings Universitet tar kraftigt
@@ -39,7 +39,7 @@
         <mat-card-content class="dashboard-card-content">
           <div>
             <h1>Aktivitetsschema</h1>
-            <p>Här är schemat för alla aktiviteter utanför skoltid under nolle-p! Dessa är frivilliga men vi hoppas ni vill vara med!</p>
+            <p>Här är schemat för alla aktiviteter utanför skoltid under nolle-p!</p>
           </div>
         </mat-card-content>
         <mat-card-footer></mat-card-footer>
@@ -53,7 +53,8 @@
         <mat-card-content class="dashboard-card-content">
           <div>
             <h1>Schema basåret</h1>
-            <p>Här kommer ni vidare till schemat för samtliga klasser, genom att ändra under sök kan ni se endast er egen klass. obs! fungerar endast på dator. </p>
+            <p>Här kommer ni vidare till schemat för samtliga klasser, 
+              genom att ändra under sök kan ni se endast er egen klass. </p>
           </div>
         </mat-card-content>
         <mat-card-footer></mat-card-footer>
@@ -67,7 +68,7 @@
         <mat-card-content class="dashboard-card-content">
           <div style="padding-top: 20px;">
             <h1>Nolleboken</h1>
-            <p>Här är en digital version av nolleboken! Den innehåller allt möjligt intressant inom studentlivet! Obs! fungerar endast på dator</p>
+            <p>Här är en digital version av nolleboken! Den innehåller allt möjligt intressant inom studentlivet!</p>
           </div>
         </mat-card-content>
         <mat-card-footer></mat-card-footer>
@@ -85,10 +86,11 @@
           <figure>
             <img mat-card-image class="round_image" src="./../../assets/GustavKLF.jpg" />
             <figcaption>
-              <ul style="list-style-type:none;">
+              <ul style="list-style-type:none;text-align: left;">
                 <li>Namn: Gustav Hörman</li>
+                <li>KLF för: Klass A</li>
                 <li>Telefonnr: 072-240 72 48 </li>
-                <li> Mejl: gusho642@student.liu.se</li>
+                <li> Mejl: gusgo642@student.liu.se</li>
               </ul>
 
             </figcaption>
@@ -98,8 +100,9 @@
           <figure>
             <img mat-card-image class="round_image" src="./../../assets/JohanKLF.jpg" />
             <figcaption>
-              <ul style="list-style-type:none;">
+              <ul style="list-style-type:none;text-align: left;">
                 <li>Namn: Johan Landqvist</li>
+                <li>KLF för: Klass B</li>
                 <li>Telefonnr: 073-268 48 13 </li>
                 <li> Mejl: johla578@student.liu.se</li>
               </ul>
@@ -110,8 +113,9 @@
           <figure>
             <img mat-card-image class="round_image" src="./../../assets/ThomasKLF.jpg" />
             <figcaption>
-              <ul style="list-style-type:none;">
+              <ul style="list-style-type:none;text-align: left;">
                 <li>Namn: Thomas Bui</li>
+                <li>KLF för: Klass C</li>
                 <li>Telefonnr: 070-428 97 55 </li>
                 <li> Mejl: thobu687@student.liu.se</li>
               </ul>
@@ -130,22 +134,11 @@
         </div>
         <mat-grid-tile colspan="{{ colspan }}" rowspan="{{ rowspan }}">
           <figure>
-            <img mat-card-image class="round_image" src="./../../assets/hk1.jpg" />
-            <figcaption>
-              <ul style="list-style-type:none;">
-                <li>Namn: Anna Wästling</li>
-                <li>Telefonnr: 073-267 90 71 </li>
-                <li> Mejl: annwa917@student.liu.se</li>
-              </ul>
-            </figcaption>
-          </figure>
-        </mat-grid-tile>
-        <mat-grid-tile colspan="{{ colspan }}" rowspan="{{ rowspan }}">
-          <figure>
             <img mat-card-image class="round_image" src="./../../assets/hk2.jpg" />
             <figcaption>
-              <ul style="list-style-type:none;">
+              <ul style="list-style-type:none;text-align: left;">
                 <li>Namn: Amanda Hult</li>
+                <li>HKF för: klass A</li>
                 <li>Telefonnr: 072-749 18 00 </li>
                 <li> Mejl: amahu396@student.liu.se</li>
               </ul>
@@ -154,10 +147,24 @@
         </mat-grid-tile>
         <mat-grid-tile colspan="{{ colspan }}" rowspan="{{ rowspan }}">
           <figure>
+            <img mat-card-image class="round_image" src="./../../assets/hk1.jpg" />
+            <figcaption>
+              <ul style="list-style-type:none;text-align: left;">
+                <li>Namn: Anna Wästling</li>
+                <li>HKF för: klass B</li>
+                <li>Telefonnr: 073-267 90 71 </li>
+                <li> Mejl: annwa917@student.liu.se</li>
+              </ul>
+            </figcaption>
+          </figure>
+        </mat-grid-tile>
+        <mat-grid-tile colspan="{{ colspan }}" rowspan="{{ rowspan }}">
+          <figure>
             <img mat-card-image class="round_image" src="./../../assets/hk3.jpg" />
             <figcaption>
-              <ul style="list-style-type:none;">
+              <ul style="list-style-type:none;text-align: left;">
                 <li>Namn: Simon Joelsson</li>
+                <li>HKF för: klass C</li>
                 <li>Telefonnr: 070-340 13 63 </li>
                 <li> Mejl: simjo567@student.liu.se</li>
               </ul>

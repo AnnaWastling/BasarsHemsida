@@ -16,6 +16,7 @@
 .buttons {
   border-radius: 25px;
   margin-right:20px;
+  background-color: rgba(193, 73, 83, 0.8);
 }
 
 .buttonContainer{
