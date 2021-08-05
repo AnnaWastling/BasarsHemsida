@@ -70,4 +70,10 @@
   padding-top: 10px;
 }
 
+.button {
+  border-radius: 25px;
+  margin-right:20px;
+  background-color: rgb(106, 142, 174);
+}
+
 
