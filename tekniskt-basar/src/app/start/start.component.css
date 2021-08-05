@@ -35,7 +35,7 @@
 }
 .round_image {
   width: 100%;
-  max-width: 150px;
+  max-width: 200px;
   -webkit-clip-path: circle(50% at 50% 50%);
   clip-path: circle(50% at 50% 50%);
   height: auto;
