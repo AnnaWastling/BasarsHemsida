@@ -84,3 +84,9 @@
 .media:hover{
   opacity: 0.5;
 }
+
+.lista{
+  list-style-type:none;
+  text-align: left;
+  padding-bottom: 30px;
+}
