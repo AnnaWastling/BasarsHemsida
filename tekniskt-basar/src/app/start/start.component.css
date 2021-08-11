@@ -7,7 +7,7 @@
 }
 
 .header {
-  padding-top: 50px;
+  padding-top: 30px;
   width: inherit;
   height: auto;
   vertical-align: middle;
@@ -89,4 +89,15 @@
   list-style-type:none;
   text-align: left;
   padding-bottom: 30px;
+}
+
+@media screen and (max-width:600px) {
+  div.container{
+    display: none;
+  }
+  
+}
+
+.texten{
+  padding: 50px;
 }
